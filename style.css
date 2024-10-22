@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('terceiroF.jpeg');
+    background-size: cover;
+}
+
+.game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#character {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: moveObstacle 2s linear infinite;
+}
+
+@keyframes moveObstacle {
+    from { right: 0; }
+    to { right: 100vw; }
+}
